@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import './style.css'
+import Header from './components/Header';
+import MainLanding from './components/MainLanding';
+import {createBrowserRouter , RouterProvider} from "react-router-dom";
+import ProductPage from './components/product-page.jsx';
+import SideMenu from './components/sidebarmenu';
+import AboutUs from './components/aboutUs';
 
+const route = createBrowserRouter([
+  {
+    path: '/',
+    element: <MainLanding />,
+    errorElement: <div>404 not found</div>,
+  },
+  {
+    path: '/products',
+    element: <ProductPage />,
+  },
+  {
+    path: '/about-us',
+    element: <AboutUs />
+  }
+])
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <RouterProvider router={route} />
+      <SideMenu />
+    </>
   );
 }
 

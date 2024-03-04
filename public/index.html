@@ -1,43 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <title>Came A Mile</title>
+</head>
+<body>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <main class="main-cont">
+        <div class="m-divs m-banner">
+            <img src="img/main-banner.png" alt="a man with his shops!" srcset="">
+        </div>
+        
+        <div class="m-divs m-content">
+            <div class="main-title">
+                <h2>Spring '21 <br>
+                    Collection</h2>
+                <p>The entire collection created from recycled material.it contains no synthetic ,wich makes things wearable in all weathers. The fine design of the spring collection is definitely a part of your wardrobe.</p>
+                <div class="m-continue">See more
+                    <div class="right-arrow">
+                        <div class="dasteh"></div>
+                        <div class="nok"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="items-cont">
+                <div><img src="img/cameamile-d3 tops & sweatshirts.png" alt=""><p>tops & sweatshirts</p></div>
+                <div><img src="img/cameamile-d3 shoppers.png" alt=""><p>shoppers</p></div>
+                <div><img src="img/cameamile-d3 caps.png" alt=""><p>caps</p></div>
+            </div>
+        </div>
+    </main>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <div class="pop-cont">
+    <div class="pop-menu-cont">
+        <header class="header header-pop">
+            <div class="logo logo-pop"><span class="main-logo main-logo-pop">Came A Mile</span><span class="under-logo under-logo-pop">grow & bloom</span></div>
+        </header>
+            
+        <div class="pop-items">
+            <h2>Spring '21 Collections</h2>
+            <ul>
+                <li><a href="#">t-shirt</a></li>
+                <li><a href="#">coats</a></li>
+                <li><a href="#">caps</a></li>
+                <li><a href="#">sweatshirts</a></li>
+                <li><a href="about-us/aboutus.html">About Us</a></li>
+            </ul>
+        </div>
+    </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+</div>
+    <script src="js/app.js"></script>
+</body>
 </html>

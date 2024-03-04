@@ -1,0 +1,217 @@
+@font-face {
+    font-family: 'Abril Fatface regular';
+    src: url(../Fonts/Abril\ Fatface/AbrilFatface-Regular.otf);
+}
+@font-face {
+    font-family: 'Hustle bright';
+    src: url(../Fonts/hustle_bright/HustleBright.otf);
+}
+:root {
+    --main-color: rgb(244,242,231);
+    --humbergerMenu-space: 9px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--main-color);
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: beige; */
+    border: 2px solid black;
+    height: 12vh;
+    font-family: 'Abril Fatface regular';
+    padding: 0px 20px;
+}
+.logo{
+    display: block;
+    position: relative;
+    font-size: 1.7rem;
+    /* background-color: yellowgreen; */
+    cursor: pointer;
+}
+.main-logo{
+    text-transform: uppercase;
+}
+.under-logo{
+    display: inline-block;
+    width: 80%;
+    /* background-color: blueviolet; */
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: .55rem;
+    top: 90%;
+}
+
+
+.humberger {
+    position: relative;
+    width: 60px ;
+    height: 60px;
+    /* background-color: aquamarine; */
+    cursor: pointer;
+
+}
+.bar {
+    width: 80%;
+    height: 1.5px;
+    background-color: black;
+    position: absolute;
+    top : 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.bar::before,
+.bar::after{
+    content:  "";
+    width: 100%;
+    height: 1.5px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+}
+.bar::before {
+    top : -9px;
+}
+.bar::after {
+    top : 9px;
+}
+
+
+/* main content part */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    width: 100%;
+    height: 88vh;
+    /* background-color: blueviolet; */
+}
+.main-divs {
+    display: block;
+    width: 50%;
+    height: 100%;
+    /* background-color: aquamarine; */
+    z-index: 2;
+}
+.main-banner{
+    border-right: 1px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    margin: 0;
+    padding: 0;
+}
+.main-banner img{
+    display: block;
+    left: 100px;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+
+/* content and items part */
+.main-content {
+    border-left: 1px solid black;
+    display: flex;
+    flex-flow: column nowrap;
+    
+}
+.main-landing-title{
+    min-height: 60%;
+    /* background-color: blueviolet; */
+    padding: 40px 75px;
+    border-bottom : 2px solid black;
+    border-right : 2px solid black;
+}
+.main-landing-title h2 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: rgb(61,83,31);
+    font-family: 'Hustle bright';
+    display: inline-block;
+    width: 90%;
+    height: fit-content;
+    /* background-color: burlywood; */
+}
+.main-landing-title p {
+    display: inline-block;
+    width: 80%;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    /* background-color: cadetblue; */
+    color: rgb(26, 29, 22);
+    
+}
+.m-continue {
+    width: 80px;
+    position: relative;
+    /* background-color: lavender; */
+    margin-top: 30px;
+    cursor: pointer;
+}
+.m-continue a {
+    text-decoration: none;
+    color: rgb(26, 29, 22);
+}
+.right-arrow{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    /* background-color: yellowgreen; */
+    width: 100px;
+    height: 15px;
+    position: absolute;
+    left: 0;
+    transition: .2s all;
+}
+.main-dasteh{
+    width: 80%;
+    height: 1.5px;
+    background-color: black;
+}
+.nok{
+    width: 0px;
+    height: 0px;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid black;
+}
+.m-continue:hover{
+    .right-arrow{
+        left: 10px;
+    }
+}
+
+/* items carocell  */
+.main-items-cont{
+    height: 40%;
+    /* background-color: yellowgreen; */
+    display: flex;
+    flex-flow: row nowrap;
+    border-bottom: 2px solid black;
+}
+.main-items-cont div {
+    width: 33.33%;
+    border-right: 2px solid black;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: monospace;
+    white-space: nowrap;
+}
+.main-items-cont img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    height: 85%;
+    border-bottom: 2px solid black;
+}
