@@ -1,0 +1,20 @@
+.products-left {
+    width: 70%;
+    padding-top: 20px;
+    border-right: var(--default-borders);
+    height: 87.85vh;
+}
+.products-left h2 {
+    color: var(--headers-color);
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.p-items {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
