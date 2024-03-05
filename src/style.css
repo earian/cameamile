@@ -9,6 +9,8 @@
 :root {
     --main-color: rgb(244,242,231);
     --humbergerMenu-space: 9px;
+    --headers-color: rgb(61, 83, 31);
+    --default-borders: 2px solid black;
 }
 *{
     padding: 0;

@@ -18,7 +18,7 @@ class EnquireCont extends React.Component {
             <div class="enq-divs enq-prod-div">
                 <img src={this.props.imgSrc} alt=""></img>
                 <div class="en-pro-des-cont">
-                    <p><span class="enq-popup-color-span">{this.props.color}</span> <span class="enq-popup-size-span">{this.props.size}</span> {this.props.name} {this.props.date}
+                    <p><span class="enq-popup-color-span">{this.props.color}</span> <span class="enq-popup-size-span">{this.props.size}</span> {this.props.name}<br></br>{this.props.date}
                     </p>
                    <p class="enq-price-cont">&#36; <span class="pop-price-tag p-tags">{this.props.price}</span></p>
                 </div>

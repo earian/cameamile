@@ -5,6 +5,8 @@ import {createBrowserRouter , RouterProvider} from "react-router-dom";
 import ProductPage from './components/product-page.jsx';
 import SideMenu from './components/sidebarmenu';
 import AboutUs from './components/aboutUs';
+import Products from './components/products';
+
 
 const route = createBrowserRouter([
   {
@@ -14,6 +16,10 @@ const route = createBrowserRouter([
   },
   {
     path: '/products',
+    element: <Products />,
+  },
+  {
+    path: '/products/sweatshirts',
     element: <ProductPage />,
   },
   {
