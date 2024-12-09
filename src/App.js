@@ -1,4 +1,4 @@
-import './style.css'
+import './style.css';
 import Header from './components/Header';
 import MainLanding from './components/MainLanding';
 import {createBrowserRouter , RouterProvider} from "react-router-dom";
@@ -6,13 +6,14 @@ import ProductPage from './components/product-page.jsx';
 import SideMenu from './components/sidebarmenu';
 import AboutUs from './components/aboutUs';
 import Products from './components/products';
+import NotFound from './components/not-found';
 
 
 const route = createBrowserRouter([
   {
     path: '/',
     element: <MainLanding />,
-    errorElement: <div>404 not found</div>,
+    errorElement: <NotFound />,
   },
   {
     path: '/products',
@@ -24,7 +25,7 @@ const route = createBrowserRouter([
   },
   {
     path: '/about-us',
-    element: <AboutUs />
+    element: <AboutUs />,
   }
 ])
 function App() {
