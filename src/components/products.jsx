@@ -45,7 +45,6 @@ class Products extends React.Component {
                 year: year,
             }
         });
-         
     }
     render(){
         return (
@@ -62,6 +61,7 @@ class Products extends React.Component {
         <div className="product-right">
             <div className="p-date-cont">
                 <p>Today's Date</p>
+                <hr></hr>
                 <p>Day: <span> {this.state.date.day}</span></p>
                 <p>Month: <span> {this.state.date.month}</span></p>
                 <p>Year: <span> {this.state.date.year}</span></p>

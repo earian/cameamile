@@ -2,7 +2,7 @@
     width: 70%;
     padding-top: 20px;
     border-right: var(--default-borders);
-    height: 87.85vh;
+    min-height: var(--initial-product-height);
     display: inline-block;
 }
 .products-left h2 {

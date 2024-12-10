@@ -9,3 +9,6 @@
 #nf-main-div img:hover {
     cursor: none;
 }
+#nf-main-div p {
+    user-select: none;
+}

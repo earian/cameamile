@@ -11,6 +11,7 @@
     --humbergerMenu-space: 9px;
     --headers-color: rgb(61, 83, 31);
     --default-borders: 2px solid black;
+    --initial-product-height: 87.5vh;
 }
 *{
     padding: 0;
@@ -24,9 +25,9 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: beige; */
     border: 2px solid black;
-    height: 12vh;
+    min-height: 75px;
+    max-height: 12vh;
     font-family: 'Abril Fatface regular';
     padding: 0px 20px;
 }
@@ -94,7 +95,7 @@ body{
     justify-content: space-between;
     flex-flow: row nowrap;
     width: 100%;
-    height: 88vh;
+    height: var(--initial-product-height);
     /* background-color: blueviolet; */
 }
 .main-divs {

@@ -10,6 +10,12 @@ class MainLanding extends React.Component {
     handleClick(){
         window.location.href = '/products';
     };
+    componentDidMount(){
+        let windowHeight = window.innerHeight;
+        let headerHeight = document.querySelector('.header').offsetHeight;
+        const prodHeight = (windowHeight - headerHeight);
+        document.documentElement.style.setProperty('--initial-product-height',`${prodHeight}px`)
+    }
     render(){
         return (
         <main class="main-container">
