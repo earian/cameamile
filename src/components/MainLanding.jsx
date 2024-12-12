@@ -1,6 +1,7 @@
 import React from "react";
 import LandingProduct from "./LandingProd";
 import { Link } from 'react-router-dom';
+import banner from '../img/main-banner.png';
 
 
 class MainLanding extends React.Component {
@@ -20,7 +21,7 @@ class MainLanding extends React.Component {
         return (
         <main class="main-container">
         <div class="main-divs main-banner">
-            <img src="../../img/main-banner.png" alt="a man with his shops!" srcset=""></img>
+            <img src={banner} alt="a man with his shops!" srcset=""></img>
         </div>
         
         <div class="main-divs main-content">

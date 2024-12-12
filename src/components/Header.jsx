@@ -13,7 +13,7 @@ class Header extends React.Component {
     render(){
         return (
         <header class="header">
-        <div class="logo" id="logo" onClick={this.handleLogo}><span class="main-logo">Came A Mile</span><span class="under-logo">grow & bloom</span></div>
+        <div class="logo" id="logo" onClick={this.handleLogo}><span class="main-logo">Came A Mile<span class="under-logo">grow & bloom</span></span></div>
         <div class="humberger" onClick={this.handleClick}>
             <div class="bar"></div>
         </div>

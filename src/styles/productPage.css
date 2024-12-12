@@ -245,15 +245,7 @@
         border-right: 0px;
         border-bottom: 2px solid black;
 
-    }
-    .main-content{
-        border-left: 0px;
-        height: fit-content;
-    }
-    .main-items-cont div{
-        font-size: 2.8vw;
-    }
-    
+    }   
 }
 
 @media (max-width: 1405px){
