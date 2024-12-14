@@ -20,6 +20,7 @@
     left: 0;
     animation-name: menu-popup;
     animation-duration: 1s;
+    overflow-y: scroll;
 }
 .header-pop{
     justify-content: center;
