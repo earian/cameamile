@@ -5,17 +5,10 @@
     justify-content: space-between;
     flex-flow: row nowrap;
     width: 100%;
-    height: var(--initial-product-height);
-    /* background-color: blueviolet; */
-}
-.m-divs {
-    display: block;
-    /* width: 50%; */
-    height: 100%;
-    /* background-color: aquamarine; */
-    z-index: 2;
+    align-items: stretch;
 }
 .m-banner{
+    display: none;
     width: auto;
     border-right: 1px solid black;
     border-bottom: 2px solid black;
@@ -26,7 +19,6 @@
 }
 .m-banner img{
     display: block;
-    left: 100px;
     width: 100%;
     height: 100%;
     border: 0;
@@ -40,20 +32,19 @@
     border-left: 1px solid black;
     display: flex;
     flex-flow: row nowrap;
-    width: 65%;
+    width: 100%;
 }
 .main-title{
-    width: 65%;
-    height: 100%;
+    width: 100%;
     /* background-color: blueviolet; */
-    padding: 40px 75px;
+    padding: 2.5em 1.875em;
     border-bottom : 2px solid black;
     display: flex;
     flex-flow: column nowrap;
     gap: 1.4rem;
 }
 .main-title h2 {
-    font-size: 2.4rem;
+    font-size: clamp(1em, 1em + 2vw, 2.5em);
     font-weight: 200;
     color: rgb(61,83,31);
     font-family: 'Hustle bright';
@@ -81,6 +72,7 @@
     font-size: 1.1rem;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(49,51,44);
+    max-width: 50ch;    
 }
 .color-selector-select {
     display: block;
@@ -142,9 +134,8 @@
 }
 /* items carocell  */
 .item-carocell{
+    display: none;
     width: 35%;
-    height: 100%;
-    display: flex;
     flex-flow: row nowrap;
     border-bottom: 2px solid black;
     font-family: 'Hustle bright';
@@ -234,59 +225,18 @@
     border: 2px solid black;
     cursor: pointer;
 }
-@media (max-width: 1080px) {
-    .main-cont{
-        flex-flow: column nowrap;
-    }
-    .main-divs{
-        width: 100%;
-    }
-    .main-banner{
-        border-right: 0px;
-        border-bottom: 2px solid black;
-
-    }   
-}
-
-@media (max-width: 1405px){
-    .main-title h2{
-        font-size: 1.4rem;
-    }
-    .m-desc {
-        font-size: .9rem;
-        text-align: justify;
-    }
-    .price-p {
-        font-size: 1rem;
-    }
-    .selector-labels{
-        font-size: 1.2rem;
+@media (min-width: 770px){
+    .item-carocell{
+        display: flex;
     }
 }
-@media (max-width : 1000px){
+@media (min-width: 1024px){
     .m-banner{
-        display: none;
-    }
-    .m-content{
-        width: 100%;
-    }
-    .main-title h2{
-        font-size: 1.8rem;
+        display: block;
     }
 }
-@media (max-width: 760px){
-    .main-title h2{
-        font-size: 1.4rem;
-    }
-    .m-desc {
-        font-size: .6rem;
-        text-align: justify;
-    }
-    .enq-prod-div {
-        display: none;
-    }
-    .receiver-info-div {
-        width: 100%;
-        align-items: center;
+@media (max-width: 770px){
+    .enq-btn{
+        align-self: center;
     }
 }

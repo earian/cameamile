@@ -3,7 +3,12 @@ import '../styles/enquiryPopup.css'
 
 class EnquireCont extends React.Component {
     constructor(props){
-        super(props)
+        super(props);
+        this.closingEnq = this.closingEnq.bind(this);
+    }
+    closingEnq(){
+        document.querySelector('body').style.overflow = 'auto';
+        document.getElementById('enquire-container').style.display = 'none';
     }
     render(){
         return (
@@ -11,9 +16,7 @@ class EnquireCont extends React.Component {
             <div class="pop-cont enquiry-main-cont" id='enquire-container'>
                 <div class="enquiry-cont">
                 <h3>Online Enquiry</h3>
-            <span class="closing-enq-cont" onClick={()=>{
-                document.getElementById('enquire-container').style.display = 'none';
-            }}>&times;</span>
+            <span class="closing-enq-cont" onClick={this.closingEnq}>&times;</span>
             <div class="enq-main-cont"> 
             <div class="enq-divs enq-prod-div">
                 <img src={this.props.imgSrc} alt=""></img>

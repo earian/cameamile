@@ -4,7 +4,7 @@
     height: 100vh;
     z-index: 2;
     background-color: rgba(79, 79, 79, 0.612);
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     display: none;
@@ -20,7 +20,7 @@
     left: 0;
     animation-name: menu-popup;
     animation-duration: 1s;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 .header-pop{
     justify-content: center;

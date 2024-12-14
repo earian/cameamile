@@ -114,8 +114,8 @@ body{
 
 /* content and items part */
 .main-content {
-    border-left: 1px solid black;
     display: flex;
+    border-left: 1px solid black;
     flex-flow: column nowrap;
     font-size: 1rem;
 }
@@ -125,7 +125,7 @@ body{
     border-right : 2px solid black;
 }
 .main-landing-title h2 {
-    font-size: clamp(1.8em , 2.4em ,2.8em);
+    font-size: clamp(1.5em, 1.5em + 2vw, 2.5em);
     font-weight: 600;
     color: rgb(61,83,31);
     font-family: 'Hustle bright';
@@ -227,5 +227,10 @@ body{
     }
     .main-landing-title{
         flex-basis: 75%;
+    }
+}
+@media (max-width: 770px){
+    .main-content{
+        width: 100%;
     }
 }
