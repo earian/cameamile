@@ -234,3 +234,11 @@ body{
         width: 100%;
     }
 }
+@media (max-width: 425px){
+    .humberger{
+        display:none;
+    }
+    .header{
+        justify-content: center;
+    }
+}

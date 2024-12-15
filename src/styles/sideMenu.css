@@ -11,7 +11,7 @@
 }
 .pop-menu-cont {
     z-index: 3;
-    width: 50%;
+    width: clamp(20em, 20em + 15vw, 200em);
     height: 100vh;
     border-right: 2px solid black;
     background-color: var(--main-color);
@@ -38,7 +38,7 @@
 }
 .pop-items h2 {
     font-family: 'Hustle bright';
-    font-size: 2.6rem;
+    font-size: clamp(0.5em, 0.5em + 1vw, 2em);
     color: rgb(61,83,31);
     text-align: center;
     display: block;
@@ -53,6 +53,7 @@
 .pop-items a{
     text-decoration: none;
     color: rgb(26, 29, 22);
+    font-size: clamp(1rem, 1rem + 1vw, 1.4rem);
 }
 .closing-pop{
     width: 50%;
