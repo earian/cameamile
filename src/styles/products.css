@@ -1,8 +1,7 @@
 .products-left {
-    width: 70%;
+    width: 100%;
     padding-top: 20px;
     border-right: var(--default-borders);
-    height: 87.85vh;
     display: inline-block;
 }
 .products-left h2 {
@@ -20,8 +19,7 @@
     gap: 15px;
 }
 .product-right {
-    width: 30%;
-    float: right;
+    display: none;
 }
 .p-date-cont {
     text-align: center;
@@ -34,4 +32,14 @@
 }
 .p-date-cont p > span {
     color: grey;
+}
+@media (min-width: 770px){
+    .products-left{
+        width: 70%;
+    }
+    .product-right {
+        display: block;
+        width: 30%;
+        float: right;
+    }
 }

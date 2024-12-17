@@ -22,16 +22,16 @@ class AboutUs extends React.Component {
                     <li>+7 (800) 450-50-40</li>
 
                 </ul></div>
-                <div><h4>E-mail</h4>
-                    <ul>
-                    <li>cameamile@gmail.com</li>
-                    
-
-                </ul></div>
-                <div data-last-child="true"><h4>Address</h4>
+                <div ><h4>Address</h4>
                     <ul>
                     <li>kamanina street ,59 , moscow, moscow region, 22042</li>
                     <li></li>
+
+                </ul></div>
+                <div data-last-child="true"><h4>E-mail</h4>
+                    <ul>
+                    <li>cameamile@gmail.com</li>
+                    
 
                 </ul></div>
             </footer>

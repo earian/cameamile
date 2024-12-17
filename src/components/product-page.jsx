@@ -62,7 +62,7 @@ class ProductPage extends React.Component {
                 <h2>Green Sweatshirt <br></br> Spring Drop '21</h2>
                 <div className="main-desc-cont">
                 <p className="price-p">&#36; <span className="price-tag p-tags">{this.state.product.price}</span> (Inclusive of all taxes)</p>
-                <p className="m-desc">Soft jersey for the sweatshirts. organic cotton.Grown with less water and no pesticides. there are no loser here: preserving wildlife and improving condition for the cotton growers.composition: 95% organic cotton, 5% elastane. care: Machine wash and dry the sweatshirt according to the instructions on the label.</p>                   
+                <p className="m-desc">Soft jersey for the sweatshirts. organic cotton. Grown with less water and no pesticides. there are no loser here: preserving wildlife and improving condition for the cotton growers. composition: 95% organic cotton, 5% elastane. care: Machine wash and dry the sweatshirt according to the instructions on the label.</p>                   
                  </div> 
                     <div className="select-cont">
                         <div className="color-selector">
@@ -90,11 +90,9 @@ class ProductPage extends React.Component {
 
 
                     <input type="button" value="Enquire" className="enq-btn" onClick={()=>{
+                        document.querySelector('body').style.overflow = 'hidden';
                         document.getElementById('enquire-container').style.display = 'flex';
                     }}></input>
-                    <EnquireCont imgSrc={banner} price={this.state.product.price} color={this.state.product.color}
-                    name={this.state.product.name} date={this.state.product.dropDate}
-                    size={this.state.product.size}/>
             </div>
             
             <div className="item-carocell">
@@ -122,7 +120,10 @@ class ProductPage extends React.Component {
         </div>
         </div>
     </main>
-
+                
+    <EnquireCont imgSrc={banner} price={this.state.product.price} color={this.state.product.color}
+                    name={this.state.product.name} date={this.state.product.dropDate}
+                    size={this.state.product.size}/>
     
             </>
         )
