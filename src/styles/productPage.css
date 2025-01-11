@@ -100,20 +100,17 @@
 .size-cont ul{
     display: flex;
     flex-flow: row nowrap;
-    border: 2px solid black;
 }
 .size-cont li{
     display: inline-block;
     width: 20%;
     text-align: center;
     padding: 14px;
-    border-right: 2px solid black;
+    border: 2px solid black;
+    border-width: 2px 1px 2px 1px;
     cursor: pointer;
     font-family: 'Corporate A regular';
     color: rgb(39,42,35);
-}
-.size-cont ul:last-child {
-    border-right: none;
 }
 .selected-size {
     background-color : rgb(26,29,22);
