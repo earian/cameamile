@@ -1,24 +1,16 @@
-import React from "react";
-
-class Header extends React.Component {
-    constructor(props){
-        super(props)
-    }
-    handleClick(){
+export default function Header(props) {
+    function handleClick(){
         document.getElementById('side-menu').style.display = 'block';
     }
-    handleLogo(){
+    function handleLogoClick(){
         window.location.href = '/';
     }
-    render(){
-        return (
-        <header class="header">
-        <div class="logo" id="logo" onClick={this.handleLogo}><span class="main-logo">Came A Mile<span class="under-logo">grow & bloom</span></span></div>
-        <div class="humberger" onClick={this.handleClick}>
-            <div class="bar"></div>
+    return (
+        <header className="header">
+        <div className="logo" id="logo" onClick={handleLogoClick}><span className="main-logo">Came A Mile<span className="under-logo">grow & bloom</span></span></div>
+        <div className="humberger" onClick={handleClick}>
+            <div className="bar"></div>
         </div>
         </header>
         )
-    }
 }
-export default Header;

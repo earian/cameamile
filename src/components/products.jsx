@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import '../styles/products.css';
 import ProductTemplate from "./p-template";
 import caps from '../img/cameamile-d3 caps.png';
