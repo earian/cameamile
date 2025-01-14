@@ -2,13 +2,9 @@ import React from "react";
 import banner from '../img/aboutus-bnr.png';
 import '../styles/aboutus.css';
 
-class AboutUs extends React.Component {
-    constructor(props){
-        super(props);
-    }
-    render(){
+export default function AboutUs(props) {
         return (
-            <main class="aboutus-main-cont">
+    <main class="aboutus-main-cont">
 
         <div class="au-desc-cont">
             <div class="au-main-desc-cont">
@@ -41,6 +37,3 @@ class AboutUs extends React.Component {
     </main>
         )
     }
-}
-
-export default AboutUs;
