@@ -1,14 +1,8 @@
-import React from "react";
-
-class LandingProduct extends React.Component {
-    constructor(props){
-        super(props)
-    }
-    render(){
+export default function LandingProduct(props){
         return(
-            <div><img src={this.props.imgSrc} alt=""></img><p>{this.props.prodTitle}</p></div>
+            <div>
+                <img src={props.imgSrc} alt=""></img>
+                <p>{props.title}</p>
+            </div>
         )
     }
-}
-
-export default LandingProduct;

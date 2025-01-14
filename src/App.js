@@ -3,7 +3,7 @@ import Header from './components/Header';
 import MainLanding from './components/MainLanding';
 import {createBrowserRouter , RouterProvider} from "react-router-dom";
 import ProductPage from './components/product-page.jsx';
-import SideMenu from './components/sidebarmenu';
+import SideMenu from './components/sidebarMenu';
 import AboutUs from './components/aboutUs';
 import Products from './components/products';
 import NotFound from './components/not-found';
@@ -16,7 +16,7 @@ const route = createBrowserRouter([
     errorElement: <NotFound />,
   },
   {
-    path: '/products',
+    path: '/Category',
     element: <Products />,
   },
   {
