@@ -1,4 +1,3 @@
-import React from "react";
 import banner from '../img/aboutus-bnr.png';
 import '../styles/aboutus.css';
 
