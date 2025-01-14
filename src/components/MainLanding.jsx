@@ -29,7 +29,7 @@ class MainLanding extends React.Component {
                 <h2>Spring '21 <br></br>
                     Collection</h2>
                 <p>The entire collection created from recycled material.it contains no synthetic ,wich makes things wearable in all weathers. The fine design of the spring collection is definitely a part of your wardrobe.</p>
-                <div class="m-continue" ><Link to={`/products`}>See more</Link>
+                <div class="m-continue" ><Link to={`/Category`}>See more</Link>
                     <div class="right-arrow" onClick={this.handleClick}>
                         <div class="main-dasteh"></div>
                         <div class="nok"></div>

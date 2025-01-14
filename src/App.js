@@ -16,7 +16,7 @@ const route = createBrowserRouter([
     errorElement: <NotFound />,
   },
   {
-    path: '/products',
+    path: '/Category',
     element: <Products />,
   },
   {
