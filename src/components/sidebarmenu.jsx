@@ -1,20 +1,13 @@
-import React from "react";
 import '../styles/sideMenu.css'
 
+export default function SideMenu(props) {
+    function handleClosing(e){
+        const t = document.getElementById('side-menu');
+        if(t == e.target){
+            t.style.display = 'none';
+            }
+        }
 
-function handleClosing(e){
-    const t = document.getElementById('side-menu');
-    if(t == e.target){
-        t.style.display = 'none';
-    }
-}
-
-class SideMenu extends React.Component {
-    constructor(props){
-        super(props)
-    }
-
-    render(){
         return (
         <div className="pop-cont" id='side-menu' onClick={handleClosing}>
         <div className="pop-menu-cont">
@@ -36,6 +29,3 @@ class SideMenu extends React.Component {
     </div>
         )
     }
-}
-
-export default SideMenu;
