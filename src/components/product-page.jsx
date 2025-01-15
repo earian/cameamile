@@ -3,12 +3,12 @@ import banner from '../img/p-p-img/p-p-banner.png';
 import first from '../img/p-p-img/p-p-first-carocell.png';
 import EnquireCont from "./enq-container";
 import '../styles/productPage.css';
+import SizeSelector from "./sizeSelector";
 
-const sizesArr = ['XS','S','M','L','XL','XXL'];
-const colorsArr = ['Green' ,'Blue' ,'Red' ,'Navy' ,'Light Green'];
+    const sizesArr = ['XS','S','M','L','XL','XXL'];
+    const colorsArr = ['Green' ,'Blue' ,'Red' ,'Navy' ,'Light Green'];
 
 export default function ProductPage() {
-    const [sizeInd ,setSizeInd] = useState(0);
     const [product ,setProduct] = useState({
         name: 'Sweatshirt',
         color: 'Green',
@@ -18,16 +18,13 @@ export default function ProductPage() {
     })
     function handleColor(e){
         const newColor = e.target.value;
-        setProduct({...product ,color: newColor});
+        if(product.color != newColor) setProduct({...product ,color: newColor});
     }
-    function handleSizeClick(e){
-        const slctdSize = e.target.attributes.value.nodeValue;
-        const slctdInd = sizesArr.indexOf(slctdSize);
-        let newPrice = 64.55;
-        if(slctdSize == 'L' || slctdSize == 'XL') newPrice = 65.55;
-        else if(slctdSize == 'XXL') newPrice = 66.55;
-        setSizeInd(slctdInd);
-        setProduct({...product,size: slctdSize ,price: newPrice});
+    function handleSizeClick(size){
+        let newPrice = 64.99;
+        if(size == 'L' || size == 'XL') newPrice = 65.55;
+        else if(size == 'XXL') newPrice = 66.55;
+        if(product.price != newPrice) setProduct({ ...product ,price: newPrice});
         }
 
         return (
@@ -50,21 +47,7 @@ export default function ProductPage() {
                             <select name="color" id="p-color-selector" className="color-selector-select"  onChange={(e)=> handleColor(e)}>
                                 {colorsArr.map((color ,ind)=> <option value={color} key={ind}>{color}</option>)}
                             </select>
-
-                            <div className="size-selector">
-                                <p className="size-selector-label selector-labels">Size:</p>
-                                <div className="size-cont">
-                                    <ul>
-                                        {sizesArr.map((size ,ind)=> {
-                                            if(ind === sizeInd) {
-                                                return <li value={size} key={ind} className="selected-size" onClick={(e)=> handleSizeClick(e)}>{size}</li>
-                                            } else {
-                                                return <li value={size} key={ind} onClick={(e)=> handleSizeClick(e)}>{size}</li>
-                                            }
-                                        })}
-                                    </ul>
-                                </div>
-                            </div>
+                        <SizeSelector sizes={sizesArr} handleSelectedSize={handleSizeClick}/>
                         </div>
                     </div>
 
@@ -75,7 +58,7 @@ export default function ProductPage() {
                     }}></input>
             </div>
             
-            <div className="item-carocell">
+        <div className="item-carocell">
 
            
             <div className="items-date-cont">
