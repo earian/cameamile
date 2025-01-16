@@ -1,15 +1,17 @@
 import { useEffect, useState } from "react";
 import '../styles/products.css';
 import ProductTemplate from "./p-template";
-import caps from '../img/cameamile-d3 caps.png';
-import topsImg from '../img/cameamile-d3 tops & sweatshirts.png';
-import shoppersImg from '../img/cameamile-d3 shoppers.png';
+
+const caps = '/images/products/Medium-size/cap1.png';
+const sweaterImg = '/images/products/Thumbnail/sweater1.png';
+const shoppersImg = '/images/products/Medium-size/shopper1.png';
+const topsImg = '/images/products/Medium-size/t-shirt1.png';
 
 const productsCat = [
     {id: 0 ,imgUrl: caps ,name: 'Caps'},
-    {id: 1 ,imgUrl: topsImg ,name: 'Sweatshirts'},
+    {id: 1 ,imgUrl: sweaterImg ,name: 'Sweatshirts'},
     {id: 2 ,imgUrl: shoppersImg ,name: 'Shoppers'},
-    {id: 3 ,imgUrl: '' ,name: 'Tops'}
+    {id: 3 ,imgUrl: topsImg ,name: 'Tops'}
 ];
 
 export default function Products(props) {

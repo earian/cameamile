@@ -1,10 +1,10 @@
 import { useState } from "react";
-import banner from '../img/p-p-img/p-p-banner.png';
-import first from '../img/p-p-img/p-p-first-carocell.png';
 import EnquireCont from "./enq-container";
 import '../styles/productPage.css';
 import SizeSelector from "./sizeSelector";
 
+    const banner = '/images/products/Banner/sweater1.png';
+    const first = '/images/products/Thumbnail/cap1.png';
     const sizesArr = ['XS','S','M','L','XL','XXL'];
     const colorsArr = ['Green' ,'Blue' ,'Red' ,'Navy' ,'Light Green'];
 

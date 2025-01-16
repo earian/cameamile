@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'Abril Fatface regular';
-    src: url(../Fonts/Abril\ Fatface/AbrilFatface-Regular.otf);
+    src: url(/public/fonts/Abril\ Fatface/AbrilFatface-Regular.otf);
 }
 @font-face {
     font-family: 'Hustle bright';
-    src: url(../Fonts/hustle_bright/HustleBright.otf);
+    src: url(/public/fonts/hustle_bright/HustleBright.otf);
 }
 :root {
     --main-color: rgb(244,242,231);

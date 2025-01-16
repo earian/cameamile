@@ -1,5 +1,6 @@
-import banner from '../img/aboutus-bnr.png';
 import '../styles/aboutus.css';
+
+const banner = 'images/banner/aboutus.png'
 
 export default function AboutUs(props) {
         return (

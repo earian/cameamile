@@ -1,18 +1,19 @@
 import { Link } from 'react-router-dom';
 import LandingProduct from "./LandingProd";
-import banner from '../img/main-banner.png';
+
+const banner = '/images/banner/main.png';
 
 const Products = [
     {
-        imgUrl: '',
+        imgUrl: '/images/products/Thumbnail/sweater1.png',
         title: 'tops & sweatshirts',
     },
     {
-        imgUrl: '',
+        imgUrl: '/images/products/Medium-size/shopper1.png',
         title: 'Shoppers',
     },
     {
-        imgUrl: '',
+        imgUrl: '/images/products/Medium-size/cap1.png',
         title: 'Caps',
     },
 ];

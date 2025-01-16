@@ -27,7 +27,7 @@ export default function EnquireCont({ imgSrc , product }) {
                 <input type="number" placeholder="+7 (850)500-50-50" className="enq-div-first-section-inputs enq-div-number-input" required></input>
                 <div className="checkbox">
                     <input type="checkbox" id="enq-checkbox" required></input>
-                    <label htmlFor="enq-checkbox">I accept the <a href="#">privacy policy</a> of the cameamile</label>
+                    <label htmlFor="enq-checkbox">I accept the <a href="https://fa.wikipedia.org/wiki/%D9%82%D8%A7%D9%86%D9%88%D9%86_%D8%A7%D8%B3%D8%A7%D8%B3%DB%8C_%D8%AC%D9%85%D9%87%D9%88%D8%B1%DB%8C_%D8%A7%D8%B3%D9%84%D8%A7%D9%85%DB%8C_%D8%A7%DB%8C%D8%B1%D8%A7%D9%86" target='_blank'>privacy policy</a> of the cameamile</label>
                     
                 </div>
             <input type="submit" value="Enquire" id="enq-pop-btn" className="enq-div-first-section-inputs"></input>
